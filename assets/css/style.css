@@ -1,0 +1,84 @@
+.card {
+    min-width: 200px;
+    min-height: 140px;
+}
+
+.form_update_user {
+    margin: 0% 20% 0 20%;
+    animation: slide 0.1s ease-in-out;
+}
+.error {
+    background-color: red;
+    position: fixed;
+    right: 10px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    animation: error 1s ease;
+}
+@keyframes error {
+    from {
+        transform: translatex(300px);
+        opacity: .5;
+    }
+
+    to {
+        transform: translatex(0);
+        opacity: 1;
+    }
+}
+@keyframes slide {
+    from {
+        transform: translateY(150px);
+        opacity: .5;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+input[type="radio"] {
+    appearance: none;
+    border-radius: 5px;
+    width: 35px;
+    height: 30px;
+    border: 2px solid #999;
+    transition: 0.2s all linear;
+    margin-right: 5px;
+    top: 4px;
+    padding: 20px;
+}
+
+input#attend:checked {
+    border: 2px solid rgb(119, 255, 0);
+    background-color: rgb(13, 255, 0);
+}
+
+input#n_attend:checked {
+    border: 2px solid rgb(204, 26, 26);
+    background-color: rgb(255, 0, 0);
+}
+
+.loading {
+    display: none;
+    width: 83%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+.loading img {
+    padding: 20%;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    src: url(http://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3aCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
